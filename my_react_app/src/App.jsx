@@ -1,32 +1,17 @@
 
 
-import Button from './components/button/button';
 import './App.css'
+import Card from './components/card/card';
 
 
 function App() {
-const arr=[23,45,567];
-const obj = {
-  name:"John",
-  age:20
-};
-
-function handleClick() {
-  console.log("triggered");
-}
-
 
   return (
-<div>
-    <div>Salam</div>
-    <Button text="First" test="Bir" type="primary"
-     isActive={true} value={34} data={arr} personalinfo={obj}
-     handleClick={handleClick} />
-    <Button text="Second" test="Iki" type="secondary"/>
-    <Button text="Third" test=" Üç" type="primary"/>
-    </div>
- 
-
+    <div className="card_items">
+<Card title="Card Title" text="Card Text"/>
+<Card title="Card Title2" text="Card Text2"/>
+<Card title="Card Title3" text="Card Text3"/>
+</div>
   );
 }
 
